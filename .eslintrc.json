@@ -1,0 +1,30 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["prettier", "airbnb-base"],
+    "plugins": ["prettier"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "quotes": [2, "single", { "avoidEscape": true }],
+        "max-len": 0,
+        "no-unused-vars": "warn",
+        "no-console": "off",
+        "func-names": "off",
+        "no-process-exit": "off",
+        "object-shorthand": "off",
+        "class-methods-use-this": "off",
+        "no-undef": 0,
+        "comma-dangle": "off",
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "arrow-parens": 0
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    }
+}
